@@ -6,6 +6,8 @@
 body {
     width: 100vw;
     height: 100vh;
+    flex-direction: column;
+    gap: 20px;
 }
 
 body, #container, .column {
@@ -25,8 +27,6 @@ body, #container, .column {
 
 .unit {
     background-color: bisque;
-    width: calc(30vw/16);
-    height: calc(30vw/16);
 }
 
 .black {
