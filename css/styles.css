@@ -10,7 +10,7 @@ body {
     gap: 20px;
 }
 
-body, #container, .column {
+body, #container, .column, #controls {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body, #container, .column {
     padding: 10px;
 }
 
-.column {
+.column, #controls {
     flex-direction: column;
 }
 

@@ -10,7 +10,19 @@
 <body>
 
     <section id="controls">
-        <button id="reset">Reset</button>
+        <!-- <button id="reset">Reset</button> -->
+        <label for="temp">Cambia el tamaño del lienzo:</label><br />
+        <input type="range" id="gridRange" name="gridRange" list="markers" onchange="updateGrid(this.value);"/>
+        <p id="textInput">16 x 16</p>
+
+        <datalist id="markers">
+        <option value="0"></option>
+        <option value="25"></option>
+        <option value="50"></option>
+        <option value="75"></option>
+        <option value="100"></option>
+</datalist>
+
     </section>
     
     <section id="container">

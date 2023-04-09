@@ -1,5 +1,7 @@
 let container = document.querySelector('#container');
 let gridSize = 16;
+let sizeDisplay = document.getElementById('textInput');
+let slider = document.getElementById('gridRange');
 
 function createGrid(gridSize){
     // Creating the columns
@@ -30,17 +32,11 @@ function createGrid(gridSize){
 
 createGrid(gridSize);
 
-function promptWindow(){
+function updateGrid(value) {
+    sizeDisplay.innerHTML = `${value} x ${value}`; 
     let unitsArray = document.querySelectorAll('.unit');
     unitsArray.forEach(unit => unit.remove());
-    gridSize = prompt('Cantidad de pixeles', 16);
+    gridSize = value;
     createGrid(gridSize);
-}
-
-// Reset button and popup window
-let popBtn = document.querySelector('#reset');
-popBtn.addEventListener("click", promptWindow);
-
-
-
-
+  }
+  
